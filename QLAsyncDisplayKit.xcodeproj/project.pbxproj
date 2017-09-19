@@ -20,9 +20,27 @@
 		0013177F1F691D44000F8AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0013177E1F691D44000F8AA7 /* Foundation.framework */; };
 		001317811F691D49000F8AA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001317801F691D49000F8AA7 /* UIKit.framework */; };
 		0013178C1F691DBB000F8AA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0013178B1F691DBB000F8AA7 /* CoreGraphics.framework */; };
+		008CA8A71F7100B6004BAA63 /* libQNBHybridText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 008CA8A41F71009D004BAA63 /* libQNBHybridText.a */; };
 		00A45CB61F6A84C700CB4ECB /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A45CB51F6A84C700CB4ECB /* CoreText.framework */; };
 		00A45CB91F6A867B00CB4ECB /* QLHybridTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 001316DE1F691CF3000F8AA7 /* QLHybridTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		008CA8A31F71009D004BAA63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 008CA89F1F71009D004BAA63 /* QNBHybridText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0013161E1F691917000F8AA7;
+			remoteInfo = QNBHybridText;
+		};
+		008CA8A51F7100B0004BAA63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 008CA89F1F71009D004BAA63 /* QNBHybridText.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0013161D1F691917000F8AA7;
+			remoteInfo = QNBHybridText;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		001316BB1F691CB3000F8AA7 /* CopyFiles */ = {
@@ -61,6 +79,7 @@
 		0013177E1F691D44000F8AA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		001317801F691D49000F8AA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0013178B1F691DBB000F8AA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		008CA89F1F71009D004BAA63 /* QNBHybridText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QNBHybridText.xcodeproj; path = QNBHybridText/QNBHybridText.xcodeproj; sourceTree = "<group>"; };
 		00A45CB51F6A84C700CB4ECB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -69,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008CA8A71F7100B6004BAA63 /* libQNBHybridText.a in Frameworks */,
 				00A45CB61F6A84C700CB4ECB /* CoreText.framework in Frameworks */,
 				0013178C1F691DBB000F8AA7 /* CoreGraphics.framework in Frameworks */,
 				001317811F691D49000F8AA7 /* UIKit.framework in Frameworks */,
@@ -151,6 +171,7 @@
 		001316EA1F691D2A000F8AA7 /* 3rdKit */ = {
 			isa = PBXGroup;
 			children = (
+				008CA89F1F71009D004BAA63 /* QNBHybridText.xcodeproj */,
 			);
 			path = 3rdKit;
 			sourceTree = "<group>";
@@ -164,6 +185,14 @@
 				0013177E1F691D44000F8AA7 /* Foundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		008CA8A01F71009D004BAA63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				008CA8A41F71009D004BAA63 /* libQNBHybridText.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +221,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				008CA8A61F7100B0004BAA63 /* PBXTargetDependency */,
 			);
 			name = QLAsyncDisplayKit;
 			productName = QLAsyncDisplayKit;
@@ -223,12 +253,28 @@
 			mainGroup = 001316B41F691CB3000F8AA7;
 			productRefGroup = 001316BE1F691CB3000F8AA7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 008CA8A01F71009D004BAA63 /* Products */;
+					ProjectRef = 008CA89F1F71009D004BAA63 /* QNBHybridText.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				001316BC1F691CB3000F8AA7 /* QLAsyncDisplayKit */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		008CA8A41F71009D004BAA63 /* libQNBHybridText.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libQNBHybridText.a;
+			remoteRef = 008CA8A31F71009D004BAA63 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		001316B91F691CB3000F8AA7 /* Sources */ = {
@@ -249,6 +295,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		008CA8A61F7100B0004BAA63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QNBHybridText;
+			targetProxy = 008CA8A51F7100B0004BAA63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		001316C41F691CB3000F8AA7 /* Debug */ = {
