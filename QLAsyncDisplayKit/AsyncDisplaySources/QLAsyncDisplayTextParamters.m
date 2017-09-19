@@ -117,12 +117,6 @@
     
     [self.textItem translateNormalTextToRichText];
     
-    if (self.emojiTextBlock) {
-        self.emojiTextBlock(self.textItem);
-        
-        self.emojiTextBlock = nil;
-    }
-    
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSaveGState(context);
     CGContextTranslateCTM(context, self.displayFrame.origin.x, self.displayFrame.origin.y);

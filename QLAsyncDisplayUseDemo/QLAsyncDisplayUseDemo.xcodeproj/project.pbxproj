@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008CA8E91F711773004BAA63 /* emojiImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 008CA8E81F711773004BAA63 /* emojiImages.bundle */; };
+		008CA8EB1F711984004BAA63 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008CA8EA1F711984004BAA63 /* WebKit.framework */; };
 		00A45CB41F6A83FE00CB4ECB /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A45CB31F6A83FE00CB4ECB /* CoreText.framework */; };
 		00A45CEF1F6C0C9100CB4ECB /* libQLAsyncDisplayKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F7477F1F6A66970062CD03 /* libQLAsyncDisplayKit.a */; };
 		00A45CF81F6C149D00CB4ECB /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A45CF71F6C149D00CB4ECB /* libicucore.tbd */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		008CA8E81F711773004BAA63 /* emojiImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = emojiImages.bundle; sourceTree = "<group>"; };
+		008CA8EA1F711984004BAA63 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		00A45C951F6A7BA000CB4ECB /* libQNBHybridText.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQNBHybridText.a; path = "../../../../Library/Developer/Xcode/DerivedData/QLAsyncDisplayUseDemo-dmegmbcizbotfqfaxlnvdtohdtdy/Build/Products/Debug-iphonesimulator/libQNBHybridText.a"; sourceTree = "<group>"; };
 		00A45CB31F6A83FE00CB4ECB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		00A45CF51F6C147D00CB4ECB /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = ../../../../../../usr/lib/libicucore.A.dylib; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008CA8EB1F711984004BAA63 /* WebKit.framework in Frameworks */,
 				00A45CF81F6C149D00CB4ECB /* libicucore.tbd in Frameworks */,
 				00A45CEF1F6C0C9100CB4ECB /* libQLAsyncDisplayKit.a in Frameworks */,
 				00A45CB41F6A83FE00CB4ECB /* CoreText.framework in Frameworks */,
@@ -79,6 +84,7 @@
 		00F747561F6A65FE0062CD03 = {
 			isa = PBXGroup;
 			children = (
+				008CA8E81F711773004BAA63 /* emojiImages.bundle */,
 				00F7477A1F6A66970062CD03 /* QLAsyncDisplayKit.xcodeproj */,
 				00F747611F6A65FE0062CD03 /* QLAsyncDisplayUseDemo */,
 				00F747601F6A65FE0062CD03 /* Products */,
@@ -129,6 +135,7 @@
 		00F7478C1F6A67820062CD03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				008CA8EA1F711984004BAA63 /* WebKit.framework */,
 				00A45CF71F6C149D00CB4ECB /* libicucore.tbd */,
 				00A45CF51F6C147D00CB4ECB /* libicucore.A.dylib */,
 				00A45CB31F6A83FE00CB4ECB /* CoreText.framework */,
@@ -216,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008CA8E91F711773004BAA63 /* emojiImages.bundle in Resources */,
 				00F747721F6A65FE0062CD03 /* LaunchScreen.storyboard in Resources */,
 				00F7476F1F6A65FE0062CD03 /* Assets.xcassets in Resources */,
 				00F7476D1F6A65FE0062CD03 /* Main.storyboard in Resources */,

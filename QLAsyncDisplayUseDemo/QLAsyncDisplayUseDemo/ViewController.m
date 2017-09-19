@@ -10,7 +10,7 @@
 #import "QLAsyncHybridTextView.h"
 #import "QLAsyncDisplayLayer.h"
 
-@interface ViewController ()
+@interface ViewController () <RTLabelDelegate>
 
 @property (nonatomic, strong) QLAsyncHybridTextView *textView;
 
@@ -27,7 +27,8 @@
     
     self.textView = [[QLAsyncHybridTextView alloc] initWithFrame:CGRectZero];
 
-    self.textView.text = @"测试下富文本[微笑]或者emoji😭";
+    self.textView.text = @"测试下富文本[微笑]或者emoji😭链接呢http://url.cn/2D8F2e";
+    self.textView.delegate = self;
 
     [self.view addSubview:self.textView];
 
@@ -51,7 +52,7 @@
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     
-    self.textView.frame = CGRectMake(100, 100, 300, 20);
+    self.textView.frame = CGRectMake(100, 100, 300, 50);
 //    _displayImageLayer.frame = CGRectMake(100, 200, 300, 20);
 //    
 //    _textParameter.frameInSuperLayer = CGRectMake(0, 0, _displayImageLayer.frame.size.width, _displayImageLayer.frame.size.height);
@@ -74,6 +75,12 @@
 //    _textParameter.textItem = [[QLHybridTextItem alloc] initWithString:_textParameter.displayText];
 //    _textParameter.textItem.font = [UIFont systemFontOfSize:15];
 //    _textParameter.textItem.textColor = [UIColor blackColor];
+}
+
+- (void)rtLabel:(id)rtLabel didSelectLinkWithURL:(NSString*)url {
+    if (url.length) {
+        NSLog(@"jump url:%@",url);
+    }
 }
 
 @end

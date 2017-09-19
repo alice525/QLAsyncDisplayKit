@@ -66,6 +66,18 @@
     [super setFont:font];
 }
 
+- (void)setDelegate:(id<RTLabelDelegate>)delegate {
+    self.textParameter.delegate = delegate;
+    
+    [super setDelegate:delegate];
+}
+
+- (void)setSizeDelegate:(id<RTLabelSizeDelegate>)sizeDelegate {
+    self.textParameter.sizeDelegate = sizeDelegate;
+    
+    [super setSizeDelegate:sizeDelegate];
+}
+
 - (QLAsyncDisplayLayer *)asyncDisplayLayer {
     if (!_asyncDisplayLayer) {
         _asyncDisplayLayer = [QLAsyncDisplayLayer layer];

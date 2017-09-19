@@ -177,7 +177,7 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [super touchesEnded:touches withEvent:event];
+    [[self textItem] touchesEnded:touches withEvent:event];
     
     [self performSelector:@selector(dismissBoundRectForTouch) withObject:nil afterDelay:0.1];
 }
