@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001316E01F691CF3000F8AA7 /* QLAsyncDisplayGradientParamters.m in Sources */ = {isa = PBXBuildFile; fileRef = 001316CB1F691CF3000F8AA7 /* QLAsyncDisplayGradientParamters.m */; };
+		001316E11F691CF3000F8AA7 /* QLAsyncDisplayImageParamters.m in Sources */ = {isa = PBXBuildFile; fileRef = 001316CD1F691CF3000F8AA7 /* QLAsyncDisplayImageParamters.m */; };
+		001316E21F691CF3000F8AA7 /* QLAsyncDisplayObjectParamters.m in Sources */ = {isa = PBXBuildFile; fileRef = 001316CF1F691CF3000F8AA7 /* QLAsyncDisplayObjectParamters.m */; };
+		001316E31F691CF3000F8AA7 /* QLAsyncDisplayTextParamters.m in Sources */ = {isa = PBXBuildFile; fileRef = 001316D11F691CF3000F8AA7 /* QLAsyncDisplayTextParamters.m */; };
+		001316E41F691CF3000F8AA7 /* NSObject+QLAsyncObjectExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 001316D31F691CF3000F8AA7 /* NSObject+QLAsyncObjectExtra.m */; };
+		001316E51F691CF3000F8AA7 /* QLAsyncDisplayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 001316D51F691CF3000F8AA7 /* QLAsyncDisplayLayer.m */; };
+		001316E61F691CF3000F8AA7 /* QLAsyncDisplayOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 001316D81F691CF3000F8AA7 /* QLAsyncDisplayOperation.m */; };
+		001316E71F691CF3000F8AA7 /* QLAsyncDisplayTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 001316DA1F691CF3000F8AA7 /* QLAsyncDisplayTransaction.m */; };
+		001316E81F691CF3000F8AA7 /* QLAsyncDisplayTransactionGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 001316DC1F691CF3000F8AA7 /* QLAsyncDisplayTransactionGroup.m */; };
+		001316E91F691CF3000F8AA7 /* QLHybridTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001316DF1F691CF3000F8AA7 /* QLHybridTextView.m */; };
+		0013177F1F691D44000F8AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0013177E1F691D44000F8AA7 /* Foundation.framework */; };
+		001317811F691D49000F8AA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001317801F691D49000F8AA7 /* UIKit.framework */; };
+		0013178C1F691DBB000F8AA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0013178B1F691DBB000F8AA7 /* CoreGraphics.framework */; };
+		00A45CB61F6A84C700CB4ECB /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A45CB51F6A84C700CB4ECB /* CoreText.framework */; };
+		00A45CB91F6A867B00CB4ECB /* QLHybridTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 001316DE1F691CF3000F8AA7 /* QLHybridTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A45CEC1F6C0C7F00CB4ECB /* libQNBHybridText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 001317871F691D76000F8AA7 /* libQNBHybridText.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		001317861F691D76000F8AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 001317821F691D76000F8AA7 /* QNBHybridText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0013161E1F691917000F8AA7;
+			remoteInfo = QNBHybridText;
+		};
+		00A45CEA1F6C0C7900CB4ECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 001317821F691D76000F8AA7 /* QNBHybridText.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0013161D1F691917000F8AA7;
+			remoteInfo = QNBHybridText;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		001316BB1F691CB3000F8AA7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		001316BD1F691CB3000F8AA7 /* libQLAsyncDisplayKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQLAsyncDisplayKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		001316CA1F691CF3000F8AA7 /* QLAsyncDisplayGradientParamters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLAsyncDisplayGradientParamters.h; sourceTree = "<group>"; };
+		001316CB1F691CF3000F8AA7 /* QLAsyncDisplayGradientParamters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLAsyncDisplayGradientParamters.m; sourceTree = "<group>"; };
+		001316CC1F691CF3000F8AA7 /* QLAsyncDisplayImageParamters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLAsyncDisplayImageParamters.h; sourceTree = "<group>"; };
+		001316CD1F691CF3000F8AA7 /* QLAsyncDisplayImageParamters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLAsyncDisplayImageParamters.m; sourceTree = "<group>"; };
+		001316CE1F691CF3000F8AA7 /* QLAsyncDisplayObjectParamters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLAsyncDisplayObjectParamters.h; sourceTree = "<group>"; };
+		001316CF1F691CF3000F8AA7 /* QLAsyncDisplayObjectParamters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLAsyncDisplayObjectParamters.m; sourceTree = "<group>"; };
+		001316D01F691CF3000F8AA7 /* QLAsyncDisplayTextParamters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLAsyncDisplayTextParamters.h; sourceTree = "<group>"; };
+		001316D11F691CF3000F8AA7 /* QLAsyncDisplayTextParamters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLAsyncDisplayTextParamters.m; sourceTree = "<group>"; };
+		001316D21F691CF3000F8AA7 /* NSObject+QLAsyncObjectExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+QLAsyncObjectExtra.h"; sourceTree = "<group>"; };
+		001316D31F691CF3000F8AA7 /* NSObject+QLAsyncObjectExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+QLAsyncObjectExtra.m"; sourceTree = "<group>"; };
+		001316D41F691CF3000F8AA7 /* QLAsyncDisplayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLAsyncDisplayLayer.h; sourceTree = "<group>"; };
+		001316D51F691CF3000F8AA7 /* QLAsyncDisplayLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLAsyncDisplayLayer.m; sourceTree = "<group>"; };
+		001316D71F691CF3000F8AA7 /* QLAsyncDisplayOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLAsyncDisplayOperation.h; sourceTree = "<group>"; };
+		001316D81F691CF3000F8AA7 /* QLAsyncDisplayOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLAsyncDisplayOperation.m; sourceTree = "<group>"; };
+		001316D91F691CF3000F8AA7 /* QLAsyncDisplayTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLAsyncDisplayTransaction.h; sourceTree = "<group>"; };
+		001316DA1F691CF3000F8AA7 /* QLAsyncDisplayTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLAsyncDisplayTransaction.m; sourceTree = "<group>"; };
+		001316DB1F691CF3000F8AA7 /* QLAsyncDisplayTransactionGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLAsyncDisplayTransactionGroup.h; sourceTree = "<group>"; };
+		001316DC1F691CF3000F8AA7 /* QLAsyncDisplayTransactionGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLAsyncDisplayTransactionGroup.m; sourceTree = "<group>"; };
+		001316DE1F691CF3000F8AA7 /* QLHybridTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLHybridTextView.h; sourceTree = "<group>"; };
+		001316DF1F691CF3000F8AA7 /* QLHybridTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLHybridTextView.m; sourceTree = "<group>"; };
+		0013177E1F691D44000F8AA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		001317801F691D49000F8AA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		001317821F691D76000F8AA7 /* QNBHybridText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QNBHybridText.xcodeproj; path = QNBHybridText/QNBHybridText.xcodeproj; sourceTree = "<group>"; };
+		0013178B1F691DBB000F8AA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		00A45CB51F6A84C700CB4ECB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		001316BA1F691CB3000F8AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A45CEC1F6C0C7F00CB4ECB /* libQNBHybridText.a in Frameworks */,
+				00A45CB61F6A84C700CB4ECB /* CoreText.framework in Frameworks */,
+				0013178C1F691DBB000F8AA7 /* CoreGraphics.framework in Frameworks */,
+				001317811F691D49000F8AA7 /* UIKit.framework in Frameworks */,
+				0013177F1F691D44000F8AA7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		001316B41F691CB3000F8AA7 = {
+			isa = PBXGroup;
+			children = (
+				001316BF1F691CB3000F8AA7 /* QLAsyncDisplayKit */,
+				001316BE1F691CB3000F8AA7 /* Products */,
+				0013177D1F691D43000F8AA7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		001316BE1F691CB3000F8AA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				001316BD1F691CB3000F8AA7 /* libQLAsyncDisplayKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		001316BF1F691CB3000F8AA7 /* QLAsyncDisplayKit */ = {
+			isa = PBXGroup;
+			children = (
+				001316EA1F691D2A000F8AA7 /* 3rdKit */,
+				001316C91F691CF3000F8AA7 /* AsyncDisplaySources */,
+				001316D21F691CF3000F8AA7 /* NSObject+QLAsyncObjectExtra.h */,
+				001316D31F691CF3000F8AA7 /* NSObject+QLAsyncObjectExtra.m */,
+				001316D41F691CF3000F8AA7 /* QLAsyncDisplayLayer.h */,
+				001316D51F691CF3000F8AA7 /* QLAsyncDisplayLayer.m */,
+				001316D61F691CF3000F8AA7 /* Transaction */,
+				001316DD1F691CF3000F8AA7 /* Views */,
+			);
+			path = QLAsyncDisplayKit;
+			sourceTree = "<group>";
+		};
+		001316C91F691CF3000F8AA7 /* AsyncDisplaySources */ = {
+			isa = PBXGroup;
+			children = (
+				001316CA1F691CF3000F8AA7 /* QLAsyncDisplayGradientParamters.h */,
+				001316CB1F691CF3000F8AA7 /* QLAsyncDisplayGradientParamters.m */,
+				001316CC1F691CF3000F8AA7 /* QLAsyncDisplayImageParamters.h */,
+				001316CD1F691CF3000F8AA7 /* QLAsyncDisplayImageParamters.m */,
+				001316CE1F691CF3000F8AA7 /* QLAsyncDisplayObjectParamters.h */,
+				001316CF1F691CF3000F8AA7 /* QLAsyncDisplayObjectParamters.m */,
+				001316D01F691CF3000F8AA7 /* QLAsyncDisplayTextParamters.h */,
+				001316D11F691CF3000F8AA7 /* QLAsyncDisplayTextParamters.m */,
+			);
+			path = AsyncDisplaySources;
+			sourceTree = "<group>";
+		};
+		001316D61F691CF3000F8AA7 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				001316D71F691CF3000F8AA7 /* QLAsyncDisplayOperation.h */,
+				001316D81F691CF3000F8AA7 /* QLAsyncDisplayOperation.m */,
+				001316D91F691CF3000F8AA7 /* QLAsyncDisplayTransaction.h */,
+				001316DA1F691CF3000F8AA7 /* QLAsyncDisplayTransaction.m */,
+				001316DB1F691CF3000F8AA7 /* QLAsyncDisplayTransactionGroup.h */,
+				001316DC1F691CF3000F8AA7 /* QLAsyncDisplayTransactionGroup.m */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		001316DD1F691CF3000F8AA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				001316DE1F691CF3000F8AA7 /* QLHybridTextView.h */,
+				001316DF1F691CF3000F8AA7 /* QLHybridTextView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		001316EA1F691D2A000F8AA7 /* 3rdKit */ = {
+			isa = PBXGroup;
+			children = (
+				001317821F691D76000F8AA7 /* QNBHybridText.xcodeproj */,
+			);
+			path = 3rdKit;
+			sourceTree = "<group>";
+		};
+		0013177D1F691D43000F8AA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00A45CB51F6A84C700CB4ECB /* CoreText.framework */,
+				0013178B1F691DBB000F8AA7 /* CoreGraphics.framework */,
+				001317801F691D49000F8AA7 /* UIKit.framework */,
+				0013177E1F691D44000F8AA7 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		001317831F691D76000F8AA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				001317871F691D76000F8AA7 /* libQNBHybridText.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		00A45CB81F6A866A00CB4ECB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A45CB91F6A867B00CB4ECB /* QLHybridTextView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		001316BC1F691CB3000F8AA7 /* QLAsyncDisplayKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001316C61F691CB3000F8AA7 /* Build configuration list for PBXNativeTarget "QLAsyncDisplayKit" */;
+			buildPhases = (
+				001316B91F691CB3000F8AA7 /* Sources */,
+				001316BA1F691CB3000F8AA7 /* Frameworks */,
+				001316BB1F691CB3000F8AA7 /* CopyFiles */,
+				00A45CB81F6A866A00CB4ECB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00A45CEB1F6C0C7900CB4ECB /* PBXTargetDependency */,
+			);
+			name = QLAsyncDisplayKit;
+			productName = QLAsyncDisplayKit;
+			productReference = 001316BD1F691CB3000F8AA7 /* libQLAsyncDisplayKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		001316B51F691CB3000F8AA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = tencentVideo;
+				TargetAttributes = {
+					001316BC1F691CB3000F8AA7 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 001316B81F691CB3000F8AA7 /* Build configuration list for PBXProject "QLAsyncDisplayKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 001316B41F691CB3000F8AA7;
+			productRefGroup = 001316BE1F691CB3000F8AA7 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 001317831F691D76000F8AA7 /* Products */;
+					ProjectRef = 001317821F691D76000F8AA7 /* QNBHybridText.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				001316BC1F691CB3000F8AA7 /* QLAsyncDisplayKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		001317871F691D76000F8AA7 /* libQNBHybridText.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libQNBHybridText.a;
+			remoteRef = 001317861F691D76000F8AA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		001316B91F691CB3000F8AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001316E61F691CF3000F8AA7 /* QLAsyncDisplayOperation.m in Sources */,
+				001316E11F691CF3000F8AA7 /* QLAsyncDisplayImageParamters.m in Sources */,
+				001316E31F691CF3000F8AA7 /* QLAsyncDisplayTextParamters.m in Sources */,
+				001316E51F691CF3000F8AA7 /* QLAsyncDisplayLayer.m in Sources */,
+				001316E41F691CF3000F8AA7 /* NSObject+QLAsyncObjectExtra.m in Sources */,
+				001316E71F691CF3000F8AA7 /* QLAsyncDisplayTransaction.m in Sources */,
+				001316E21F691CF3000F8AA7 /* QLAsyncDisplayObjectParamters.m in Sources */,
+				001316E91F691CF3000F8AA7 /* QLHybridTextView.m in Sources */,
+				001316E01F691CF3000F8AA7 /* QLAsyncDisplayGradientParamters.m in Sources */,
+				001316E81F691CF3000F8AA7 /* QLAsyncDisplayTransactionGroup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00A45CEB1F6C0C7900CB4ECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QNBHybridText;
+			targetProxy = 00A45CEA1F6C0C7900CB4ECB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		001316C41F691CB3000F8AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		001316C51F691CB3000F8AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		001316C71F691CB3000F8AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				ENABLE_BITCODE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/QLAsyncDisplayKit/3rdKit/QNBHybridText/QNBHybridText\"/**";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		001316C81F691CB3000F8AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				ENABLE_BITCODE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/QLAsyncDisplayKit/3rdKit/QNBHybridText/QNBHybridText\"/**";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		001316B81F691CB3000F8AA7 /* Build configuration list for PBXProject "QLAsyncDisplayKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001316C41F691CB3000F8AA7 /* Debug */,
+				001316C51F691CB3000F8AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		001316C61F691CB3000F8AA7 /* Build configuration list for PBXNativeTarget "QLAsyncDisplayKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001316C71F691CB3000F8AA7 /* Debug */,
+				001316C81F691CB3000F8AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 001316B51F691CB3000F8AA7 /* Project object */;
+}

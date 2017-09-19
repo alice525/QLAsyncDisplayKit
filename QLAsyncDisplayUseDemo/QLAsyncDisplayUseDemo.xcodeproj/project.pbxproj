@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00A45CB41F6A83FE00CB4ECB /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A45CB31F6A83FE00CB4ECB /* CoreText.framework */; };
+		00A45CEF1F6C0C9100CB4ECB /* libQLAsyncDisplayKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F7477F1F6A66970062CD03 /* libQLAsyncDisplayKit.a */; };
+		00A45CF81F6C149D00CB4ECB /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A45CF71F6C149D00CB4ECB /* libicucore.tbd */; };
+		00C1BCFB1F6FF07D00BF4670 /* emojiImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00C1BCFA1F6FF07D00BF4670 /* emojiImages.bundle */; };
+		00F747641F6A65FE0062CD03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F747631F6A65FE0062CD03 /* main.m */; };
+		00F747671F6A65FE0062CD03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F747661F6A65FE0062CD03 /* AppDelegate.m */; };
+		00F7476A1F6A65FE0062CD03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F747691F6A65FE0062CD03 /* ViewController.m */; };
+		00F7476D1F6A65FE0062CD03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F7476B1F6A65FE0062CD03 /* Main.storyboard */; };
+		00F7476F1F6A65FE0062CD03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F7476E1F6A65FE0062CD03 /* Assets.xcassets */; };
+		00F747721F6A65FE0062CD03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F747701F6A65FE0062CD03 /* LaunchScreen.storyboard */; };
+		00F7478E1F6A67820062CD03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F7478D1F6A67820062CD03 /* Foundation.framework */; };
+		00F747901F6A67870062CD03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F7478F1F6A67870062CD03 /* UIKit.framework */; };
+		00F747921F6A67900062CD03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F747911F6A67900062CD03 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00A45CED1F6C0C8900CB4ECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00F7477A1F6A66970062CD03 /* QLAsyncDisplayKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 001316BC1F691CB3000F8AA7;
+			remoteInfo = QLAsyncDisplayKit;
+		};
+		00F7477E1F6A66970062CD03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00F7477A1F6A66970062CD03 /* QLAsyncDisplayKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 001316BD1F691CB3000F8AA7;
+			remoteInfo = QLAsyncDisplayKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A45C951F6A7BA000CB4ECB /* libQNBHybridText.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQNBHybridText.a; path = "../../../../Library/Developer/Xcode/DerivedData/QLAsyncDisplayUseDemo-dmegmbcizbotfqfaxlnvdtohdtdy/Build/Products/Debug-iphonesimulator/libQNBHybridText.a"; sourceTree = "<group>"; };
+		00A45CB31F6A83FE00CB4ECB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		00A45CF51F6C147D00CB4ECB /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = ../../../../../../usr/lib/libicucore.A.dylib; sourceTree = "<group>"; };
+		00A45CF71F6C149D00CB4ECB /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		00C1BCFA1F6FF07D00BF4670 /* emojiImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = emojiImages.bundle; sourceTree = "<group>"; };
+		00F7475F1F6A65FE0062CD03 /* QLAsyncDisplayUseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QLAsyncDisplayUseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00F747631F6A65FE0062CD03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00F747651F6A65FE0062CD03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00F747661F6A65FE0062CD03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00F747681F6A65FE0062CD03 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		00F747691F6A65FE0062CD03 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		00F7476C1F6A65FE0062CD03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00F7476E1F6A65FE0062CD03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00F747711F6A65FE0062CD03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00F747731F6A65FE0062CD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F7477A1F6A66970062CD03 /* QLAsyncDisplayKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QLAsyncDisplayKit.xcodeproj; path = ../QLAsyncDisplayKit.xcodeproj; sourceTree = "<group>"; };
+		00F7478D1F6A67820062CD03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		00F7478F1F6A67870062CD03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		00F747911F6A67900062CD03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00F7475C1F6A65FE0062CD03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A45CF81F6C149D00CB4ECB /* libicucore.tbd in Frameworks */,
+				00A45CEF1F6C0C9100CB4ECB /* libQLAsyncDisplayKit.a in Frameworks */,
+				00A45CB41F6A83FE00CB4ECB /* CoreText.framework in Frameworks */,
+				00F747921F6A67900062CD03 /* CoreGraphics.framework in Frameworks */,
+				00F747901F6A67870062CD03 /* UIKit.framework in Frameworks */,
+				00F7478E1F6A67820062CD03 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00F747561F6A65FE0062CD03 = {
+			isa = PBXGroup;
+			children = (
+				00C1BCFA1F6FF07D00BF4670 /* emojiImages.bundle */,
+				00F7477A1F6A66970062CD03 /* QLAsyncDisplayKit.xcodeproj */,
+				00F747611F6A65FE0062CD03 /* QLAsyncDisplayUseDemo */,
+				00F747601F6A65FE0062CD03 /* Products */,
+				00F7478C1F6A67820062CD03 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00F747601F6A65FE0062CD03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00F7475F1F6A65FE0062CD03 /* QLAsyncDisplayUseDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00F747611F6A65FE0062CD03 /* QLAsyncDisplayUseDemo */ = {
+			isa = PBXGroup;
+			children = (
+				00F747651F6A65FE0062CD03 /* AppDelegate.h */,
+				00F747661F6A65FE0062CD03 /* AppDelegate.m */,
+				00F747681F6A65FE0062CD03 /* ViewController.h */,
+				00F747691F6A65FE0062CD03 /* ViewController.m */,
+				00F7476B1F6A65FE0062CD03 /* Main.storyboard */,
+				00F7476E1F6A65FE0062CD03 /* Assets.xcassets */,
+				00F747701F6A65FE0062CD03 /* LaunchScreen.storyboard */,
+				00F747731F6A65FE0062CD03 /* Info.plist */,
+				00F747621F6A65FE0062CD03 /* Supporting Files */,
+			);
+			path = QLAsyncDisplayUseDemo;
+			sourceTree = "<group>";
+		};
+		00F747621F6A65FE0062CD03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00F747631F6A65FE0062CD03 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00F7477B1F6A66970062CD03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00F7477F1F6A66970062CD03 /* libQLAsyncDisplayKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00F7478C1F6A67820062CD03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00A45CF71F6C149D00CB4ECB /* libicucore.tbd */,
+				00A45CF51F6C147D00CB4ECB /* libicucore.A.dylib */,
+				00A45CB31F6A83FE00CB4ECB /* CoreText.framework */,
+				00A45C951F6A7BA000CB4ECB /* libQNBHybridText.a */,
+				00F747911F6A67900062CD03 /* CoreGraphics.framework */,
+				00F7478F1F6A67870062CD03 /* UIKit.framework */,
+				00F7478D1F6A67820062CD03 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00F7475E1F6A65FE0062CD03 /* QLAsyncDisplayUseDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00F747761F6A65FE0062CD03 /* Build configuration list for PBXNativeTarget "QLAsyncDisplayUseDemo" */;
+			buildPhases = (
+				00F7475B1F6A65FE0062CD03 /* Sources */,
+				00F7475C1F6A65FE0062CD03 /* Frameworks */,
+				00F7475D1F6A65FE0062CD03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00A45CEE1F6C0C8900CB4ECB /* PBXTargetDependency */,
+			);
+			name = QLAsyncDisplayUseDemo;
+			productName = QLAsyncDisplayUseDemo;
+			productReference = 00F7475F1F6A65FE0062CD03 /* QLAsyncDisplayUseDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00F747571F6A65FE0062CD03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = tencentVideo;
+				TargetAttributes = {
+					00F7475E1F6A65FE0062CD03 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = W7E2T28TW5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 00F7475A1F6A65FE0062CD03 /* Build configuration list for PBXProject "QLAsyncDisplayUseDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00F747561F6A65FE0062CD03;
+			productRefGroup = 00F747601F6A65FE0062CD03 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 00F7477B1F6A66970062CD03 /* Products */;
+					ProjectRef = 00F7477A1F6A66970062CD03 /* QLAsyncDisplayKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				00F7475E1F6A65FE0062CD03 /* QLAsyncDisplayUseDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		00F7477F1F6A66970062CD03 /* libQLAsyncDisplayKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libQLAsyncDisplayKit.a;
+			remoteRef = 00F7477E1F6A66970062CD03 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00F7475D1F6A65FE0062CD03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C1BCFB1F6FF07D00BF4670 /* emojiImages.bundle in Resources */,
+				00F747721F6A65FE0062CD03 /* LaunchScreen.storyboard in Resources */,
+				00F7476F1F6A65FE0062CD03 /* Assets.xcassets in Resources */,
+				00F7476D1F6A65FE0062CD03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00F7475B1F6A65FE0062CD03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F7476A1F6A65FE0062CD03 /* ViewController.m in Sources */,
+				00F747671F6A65FE0062CD03 /* AppDelegate.m in Sources */,
+				00F747641F6A65FE0062CD03 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00A45CEE1F6C0C8900CB4ECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QLAsyncDisplayKit;
+			targetProxy = 00A45CED1F6C0C8900CB4ECB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00F7476B1F6A65FE0062CD03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00F7476C1F6A65FE0062CD03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00F747701F6A65FE0062CD03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00F747711F6A65FE0062CD03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00F747741F6A65FE0062CD03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00F747751F6A65FE0062CD03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00F747771F6A65FE0062CD03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W7E2T28TW5;
+				ENABLE_BITCODE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../QLAsyncDisplayKit\"/**",
+					"\"$(SRCROOT)/../QLAsyncDisplayKit\"",
+				);
+				INFOPLIST_FILE = QLAsyncDisplayUseDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = tencentVideo.QLAsyncDisplayUseDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		00F747781F6A65FE0062CD03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W7E2T28TW5;
+				ENABLE_BITCODE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../QLAsyncDisplayKit\"/**",
+					"\"$(SRCROOT)/../QLAsyncDisplayKit\"",
+				);
+				INFOPLIST_FILE = QLAsyncDisplayUseDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = tencentVideo.QLAsyncDisplayUseDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00F7475A1F6A65FE0062CD03 /* Build configuration list for PBXProject "QLAsyncDisplayUseDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00F747741F6A65FE0062CD03 /* Debug */,
+				00F747751F6A65FE0062CD03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00F747761F6A65FE0062CD03 /* Build configuration list for PBXNativeTarget "QLAsyncDisplayUseDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00F747771F6A65FE0062CD03 /* Debug */,
+				00F747781F6A65FE0062CD03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00F747571F6A65FE0062CD03 /* Project object */;
+}
