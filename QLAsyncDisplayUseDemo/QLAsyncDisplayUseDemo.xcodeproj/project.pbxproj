@@ -10,7 +10,6 @@
 		00A45CB41F6A83FE00CB4ECB /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A45CB31F6A83FE00CB4ECB /* CoreText.framework */; };
 		00A45CEF1F6C0C9100CB4ECB /* libQLAsyncDisplayKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F7477F1F6A66970062CD03 /* libQLAsyncDisplayKit.a */; };
 		00A45CF81F6C149D00CB4ECB /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A45CF71F6C149D00CB4ECB /* libicucore.tbd */; };
-		00C1BCFB1F6FF07D00BF4670 /* emojiImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00C1BCFA1F6FF07D00BF4670 /* emojiImages.bundle */; };
 		00F747641F6A65FE0062CD03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F747631F6A65FE0062CD03 /* main.m */; };
 		00F747671F6A65FE0062CD03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F747661F6A65FE0062CD03 /* AppDelegate.m */; };
 		00F7476A1F6A65FE0062CD03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F747691F6A65FE0062CD03 /* ViewController.m */; };
@@ -44,7 +43,6 @@
 		00A45CB31F6A83FE00CB4ECB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		00A45CF51F6C147D00CB4ECB /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = ../../../../../../usr/lib/libicucore.A.dylib; sourceTree = "<group>"; };
 		00A45CF71F6C149D00CB4ECB /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
-		00C1BCFA1F6FF07D00BF4670 /* emojiImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = emojiImages.bundle; sourceTree = "<group>"; };
 		00F7475F1F6A65FE0062CD03 /* QLAsyncDisplayUseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QLAsyncDisplayUseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F747631F6A65FE0062CD03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00F747651F6A65FE0062CD03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 		00F747561F6A65FE0062CD03 = {
 			isa = PBXGroup;
 			children = (
-				00C1BCFA1F6FF07D00BF4670 /* emojiImages.bundle */,
 				00F7477A1F6A66970062CD03 /* QLAsyncDisplayKit.xcodeproj */,
 				00F747611F6A65FE0062CD03 /* QLAsyncDisplayUseDemo */,
 				00F747601F6A65FE0062CD03 /* Products */,
@@ -219,7 +216,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00C1BCFB1F6FF07D00BF4670 /* emojiImages.bundle in Resources */,
 				00F747721F6A65FE0062CD03 /* LaunchScreen.storyboard in Resources */,
 				00F7476F1F6A65FE0062CD03 /* Assets.xcassets in Resources */,
 				00F7476D1F6A65FE0062CD03 /* Main.storyboard in Resources */,

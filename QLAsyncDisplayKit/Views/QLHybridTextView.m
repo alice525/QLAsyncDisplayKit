@@ -7,14 +7,10 @@
 //
 
 #import "QLHybridTextView.h"
-#import "QLAsyncDisplayLayer.h"
-#import "QLAsyncDisplayTextParamters.h"
 
 @interface QLHybridTextView()
 
-@property (nonatomic, strong) QLHybridTextItem *textItem;
-@property (nonatomic, strong) QLAsyncDisplayLayer *asyncDisplayLayer;
-@property (nonatomic, strong) QLAsyncDisplayTextParamters *textParameter;
+
 
 @end
 
@@ -24,10 +20,12 @@
 @synthesize lineBreakMode = _lineBreakMode;
 @synthesize font = _font;
 @synthesize textColor = _textColor;
-@synthesize isAsyncDisplay = _isAsyncDisplay;
+@synthesize text = _text;
+@synthesize delegate = _delegate;
+@synthesize sizeDelegate = _sizeDelegate;
 
-- (id)initWithFrame:(CGRect)_frame {
-    self = [super initWithFrame:_frame];
+- (id)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
     if (self) {
         [self setBackgroundColor:[UIColor clearColor]];
         
@@ -41,14 +39,11 @@
 {
     [super layoutSubviews];
     
-    if (self.isAsyncDisplay) {
-        self.asyncDisplayLayer.frame = self.bounds;
-        self.textParameter.frameInSuperLayer = self.bounds;
-        
-        [self.asyncDisplayLayer setNeedsDisplay];
-    } else {
-        [_textItem translateNormalTextToRichText];
-    }
+    //[_textItem translateNormalTextToRichText];
+}
+
+- (QLHybridTextItem *)textItem {
+    return nil;
 }
 
 - (void)setFrame:(CGRect)frame {
@@ -64,124 +59,85 @@
 
 - (void)setTextHorizonalAlignment:(RTTextAlignment)textAlignment
 {
-    self.textItem.textHorizonalAlignment = textAlignment;
+    _textHorizonalAlignment = textAlignment;
     [self setNeedsDisplay];
 }
 
 - (RTTextAlignment)textHorizonalAlignment
 {
-    return self.textItem.textHorizonalAlignment;
+    return _textHorizonalAlignment;
 }
 
 - (void)setLineBreakMode:(RTTextLineBreakMode)lineBreakMode
 {
-    self.textItem.lineBreakMode = lineBreakMode;
+    _lineBreakMode = lineBreakMode;
     [self setNeedsDisplay];
 }
 
 - (RTTextLineBreakMode)lineBreakMode
 {
-    return self.textItem.lineBreakMode;
+    return _lineBreakMode;
 }
 
 - (void)setText:(NSString *)text
 {
-    self.textItem.text = text;
+    _text = text;
     [self setNeedsLayout];
 }
 
 - (NSString *)text {
-    return self.textItem.text;
+    return _text;
 }
 
 - (void)setTextColor:(UIColor*)textColor
 {
-    self.textItem.textColor = textColor;
+    _textColor = textColor;
     [self setNeedsDisplay];
 }
 
 - (UIColor*)textColor
 {
-    return self.textItem.textColor;
+    return _textColor;
 }
 
 - (void)setFont:(UIFont*)font
 {
-    self.textItem.font = font;
-}
-
-- (UIFont*)font
-{
-    return self.textItem.font;
-}
-
-- (void)setComponentsAndPlainText:(RTLabelComponentsStructure*)componnetsDS {
-    self.textItem.componentsAndPlainText = componnetsDS;
+    _font = font;
     
     [self setNeedsDisplay];
 }
 
-- (RTLabelComponentsStructure*)componentsAndPlainText {
-    return self.textItem.componentsAndPlainText ;
+- (UIFont*)font
+{
+    return _font;
 }
 
+//- (void)setComponentsAndPlainText:(RTLabelComponentsStructure*)componnetsDS {
+//    self.textItem.componentsAndPlainText = componnetsDS;
+//    
+//    [self setNeedsDisplay];
+//}
+//
+//- (RTLabelComponentsStructure*)componentsAndPlainText {
+//    return self.textItem.componentsAndPlainText ;
+//}
+
 - (void)setDelegate:(id<RTLabelDelegate>)delegate {
-    self.textItem.delegate = delegate;
+    _delegate = delegate;
 }
 
 - (id<RTLabelDelegate>)delegate {
-    return self.textItem.delegate;
+    return _delegate;
 }
 
 - (void)setSizeDelegate:(id<RTLabelSizeDelegate>)sizeDelegate {
-    self.textItem.sizeDelegate = sizeDelegate;
+    _sizeDelegate = sizeDelegate;
 }
 
 - (id<RTLabelSizeDelegate>)sizeDelegate {
-    return self.textItem.sizeDelegate;
+    return _sizeDelegate;
 }
 
-- (void)setIsAsyncDisplay:(BOOL)isAsyncDisplay {
-    _isAsyncDisplay = isAsyncDisplay;
-    
-    if (isAsyncDisplay) {
-//        self.textParameter.textItem = self.textItem;
-//        self.textParameter.isEmojiText = YES;
-        
-        [self.asyncDisplayLayer addSubDisplayObjectParameter:self.textParameter];
-        
-        [self.layer addSublayer:self.asyncDisplayLayer];
-    }
-}
-
-- (BOOL)isAsyncDisplay {
-    return _isAsyncDisplay;
-}
-
-- (QLAsyncDisplayLayer *)asyncDisplayLayer {
-    if (!_asyncDisplayLayer) {
-        _asyncDisplayLayer = [QLAsyncDisplayLayer layer];
-        _asyncDisplayLayer.backgroundColor = [UIColor redColor].CGColor;
-    }
-    
-    return _asyncDisplayLayer;
-}
-
-- (QLAsyncDisplayTextParamters *)textParameter {
-    if (!_textParameter) {
-        _textParameter = [[QLAsyncDisplayTextParamters alloc] init];
-    }
-    
-    return _textParameter;
-}
-
-- (QLHybridTextItem *)textItem {
-    if (!_textItem) {
-        _textItem = [[QLHybridTextItem alloc] init];
-    }
-    
-    return _textItem;
-}
 
 #pragma mark -
 #pragma excute render
@@ -200,7 +156,7 @@
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView:self];
     
-    if (![_textItem touchesBegan:touches withEvent:event location:location]) {
+    if (![[self textItem] touchesBegan:touches withEvent:event location:location]) {
         [super touchesBegan:touches withEvent:event];
     } else {
         [self setNeedsDisplay];
@@ -228,19 +184,19 @@
 
 - (void)dismissBoundRectForTouch
 {
-    [_textItem dismissBoundRectForTouch];
+    [[self textItem]  dismissBoundRectForTouch];
     [self setNeedsDisplay];
 }
 
 - (CGSize)optimumSize
 {
-    _optimumSize = [_textItem optimumSize:CGSizeMake(CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
+    _optimumSize = [[self textItem]  optimumSize:CGSizeMake(CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
     return _optimumSize;
 }
 
 - (NSUInteger)lineCount
 {
-    return [_textItem lineCount];
+    return [[self textItem] lineCount];
 }
 
 /* 计算能够显示出来的文本size   alicejhchen (20141107)
@@ -251,7 +207,7 @@
  */
 - (CGSize)linesSize:(NSInteger)lCount constrainedToSize:(CGSize)size
 {
-    return [_textItem linesSize:lCount constrainedToSize:size];
+    return [[self textItem] linesSize:lCount constrainedToSize:size];
 }
 
 + (CGSize)textSizeWithText:(NSString *)text constraintSize:(CGSize)size font:(UIFont*)font maxLineCount:(NSInteger)lineCount lineSpacing:(CGFloat)lineSpacing;

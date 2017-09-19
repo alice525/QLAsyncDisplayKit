@@ -7,12 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "QLHybridTextView.h"
+#import "QLAsyncHybridTextView.h"
 #import "QLAsyncDisplayLayer.h"
 
 @interface ViewController ()
 
-@property (nonatomic, strong) QLHybridTextView *textView;
+@property (nonatomic, strong) QLAsyncHybridTextView *textView;
 
 @property (nonatomic, strong) QLAsyncDisplayLayer *displayImageLayer;
 @property (nonatomic, strong) QLAsyncDisplayTextParamters *textParameter;
@@ -25,20 +25,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-//    self.textView = [[QLHybridTextView alloc] initWithFrame:CGRectZero];
-//    self.textView.isAsyncDisplay = YES;
-//    self.textView.text = @"测试下富文本[微笑]或者emoji😭";
-    _displayImageLayer = [QLAsyncDisplayLayer layer];
-    _displayImageLayer.backgroundColor = [UIColor redColor].CGColor;
-    
-    _textParameter = [[QLAsyncDisplayTextParamters alloc] initWithIsEmojiText:YES];
-    [_displayImageLayer addSubDisplayObjectParameter:_textParameter];
-    
-    [self.view.layer addSublayer:_displayImageLayer];
+    self.textView = [[QLAsyncHybridTextView alloc] initWithFrame:CGRectZero];
+
+    self.textView.text = @"测试下富文本[微笑]或者emoji😭";
 
     [self.view addSubview:self.textView];
+
+    //    _displayImageLayer = [QLAsyncDisplayLayer layer];
+    //    _displayImageLayer.backgroundColor = [UIColor redColor].CGColor;
+    //
+    //    _textParameter = [[QLAsyncDisplayTextParamters alloc] initWithIsEmojiText:YES];
+    //    [_displayImageLayer addSubDisplayObjectParameter:_textParameter];
+    //
+    //    [self.view.layer addSublayer:_displayImageLayer];
     
-    [self initializeDisplayLayer];
+    //[self initializeDisplayLayer];
 }
 
 
@@ -51,11 +52,11 @@
     [super viewWillLayoutSubviews];
     
     self.textView.frame = CGRectMake(100, 100, 300, 20);
-    _displayImageLayer.frame = CGRectMake(100, 200, 300, 20);
-    
-    _textParameter.frameInSuperLayer = CGRectMake(0, 0, _displayImageLayer.frame.size.width, _displayImageLayer.frame.size.height);
-    
-    [_displayImageLayer setNeedsDisplay];
+//    _displayImageLayer.frame = CGRectMake(100, 200, 300, 20);
+//    
+//    _textParameter.frameInSuperLayer = CGRectMake(0, 0, _displayImageLayer.frame.size.width, _displayImageLayer.frame.size.height);
+//    
+//    [_displayImageLayer setNeedsDisplay];
 }
 
 - (void)initializeDisplayLayer {

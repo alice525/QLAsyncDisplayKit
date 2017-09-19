@@ -28,8 +28,6 @@
 @property (nonatomic, assign) id<RTLabelDelegate> delegate;
 @property (nonatomic, assign) id<RTLabelSizeDelegate> sizeDelegate;
 
-@property (nonatomic, assign) BOOL isAsyncDisplay;
-
 - (void)setComponentsAndPlainText:(RTLabelComponentsStructure*)componnetsDS;
 - (RTLabelComponentsStructure*)componentsAndPlainText;
 
@@ -37,6 +35,8 @@
 
 - (NSUInteger)lineCount;
 - (CGSize)linesSize:(NSInteger)lCount constrainedToSize:(CGSize)size;
+
+- (QLHybridTextItem *)textItem;
 
 /* 获取文本的高度
  

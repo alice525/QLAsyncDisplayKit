@@ -12,8 +12,6 @@
 
 @property (nonatomic, assign) BOOL isEmojiText;
 
-@property (atomic, strong) QLHybridTextItem *textItem;
-
 @end
 
 @implementation QLAsyncDisplayTextParamters
@@ -118,6 +116,12 @@
     self.textItem.sizeDelegate = self.sizeDelegate;
     
     [self.textItem translateNormalTextToRichText];
+    
+    if (self.emojiTextBlock) {
+        self.emojiTextBlock(self.textItem);
+        
+        self.emojiTextBlock = nil;
+    }
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSaveGState(context);

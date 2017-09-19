@@ -21,6 +21,10 @@
 		001317811F691D49000F8AA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001317801F691D49000F8AA7 /* UIKit.framework */; };
 		0013178C1F691DBB000F8AA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0013178B1F691DBB000F8AA7 /* CoreGraphics.framework */; };
 		008CA8A71F7100B6004BAA63 /* libQNBHybridText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 008CA8A41F71009D004BAA63 /* libQNBHybridText.a */; };
+		008CA8AC1F710CDC004BAA63 /* QLAsyncHybridTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 008CA8AA1F710CDC004BAA63 /* QLAsyncHybridTextView.h */; };
+		008CA8AD1F710CDC004BAA63 /* QLAsyncHybridTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 008CA8AB1F710CDC004BAA63 /* QLAsyncHybridTextView.m */; };
+		008CA8B01F710CF3004BAA63 /* QLSyncHybridTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 008CA8AE1F710CF3004BAA63 /* QLSyncHybridTextView.h */; };
+		008CA8B11F710CF3004BAA63 /* QLSyncHybridTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 008CA8AF1F710CF3004BAA63 /* QLSyncHybridTextView.m */; };
 		00A45CB61F6A84C700CB4ECB /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A45CB51F6A84C700CB4ECB /* CoreText.framework */; };
 		00A45CB91F6A867B00CB4ECB /* QLHybridTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 001316DE1F691CF3000F8AA7 /* QLHybridTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -80,6 +84,10 @@
 		001317801F691D49000F8AA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0013178B1F691DBB000F8AA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		008CA89F1F71009D004BAA63 /* QNBHybridText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QNBHybridText.xcodeproj; path = QNBHybridText/QNBHybridText.xcodeproj; sourceTree = "<group>"; };
+		008CA8AA1F710CDC004BAA63 /* QLAsyncHybridTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLAsyncHybridTextView.h; sourceTree = "<group>"; };
+		008CA8AB1F710CDC004BAA63 /* QLAsyncHybridTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLAsyncHybridTextView.m; sourceTree = "<group>"; };
+		008CA8AE1F710CF3004BAA63 /* QLSyncHybridTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLSyncHybridTextView.h; sourceTree = "<group>"; };
+		008CA8AF1F710CF3004BAA63 /* QLSyncHybridTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLSyncHybridTextView.m; sourceTree = "<group>"; };
 		00A45CB51F6A84C700CB4ECB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -164,6 +172,10 @@
 			children = (
 				001316DE1F691CF3000F8AA7 /* QLHybridTextView.h */,
 				001316DF1F691CF3000F8AA7 /* QLHybridTextView.m */,
+				008CA8AA1F710CDC004BAA63 /* QLAsyncHybridTextView.h */,
+				008CA8AB1F710CDC004BAA63 /* QLAsyncHybridTextView.m */,
+				008CA8AE1F710CF3004BAA63 /* QLSyncHybridTextView.h */,
+				008CA8AF1F710CF3004BAA63 /* QLSyncHybridTextView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +214,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008CA8AC1F710CDC004BAA63 /* QLAsyncHybridTextView.h in Headers */,
+				008CA8B01F710CF3004BAA63 /* QLSyncHybridTextView.h in Headers */,
 				00A45CB91F6A867B00CB4ECB /* QLHybridTextView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,9 +300,11 @@
 				001316E31F691CF3000F8AA7 /* QLAsyncDisplayTextParamters.m in Sources */,
 				001316E51F691CF3000F8AA7 /* QLAsyncDisplayLayer.m in Sources */,
 				001316E41F691CF3000F8AA7 /* NSObject+QLAsyncObjectExtra.m in Sources */,
+				008CA8B11F710CF3004BAA63 /* QLSyncHybridTextView.m in Sources */,
 				001316E71F691CF3000F8AA7 /* QLAsyncDisplayTransaction.m in Sources */,
 				001316E21F691CF3000F8AA7 /* QLAsyncDisplayObjectParamters.m in Sources */,
 				001316E91F691CF3000F8AA7 /* QLHybridTextView.m in Sources */,
+				008CA8AD1F710CDC004BAA63 /* QLAsyncHybridTextView.m in Sources */,
 				001316E01F691CF3000F8AA7 /* QLAsyncDisplayGradientParamters.m in Sources */,
 				001316E81F691CF3000F8AA7 /* QLAsyncDisplayTransactionGroup.m in Sources */,
 			);

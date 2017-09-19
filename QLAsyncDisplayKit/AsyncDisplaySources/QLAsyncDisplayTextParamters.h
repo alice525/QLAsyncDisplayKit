@@ -9,6 +9,8 @@
 #import "QLAsyncDisplayObjectParamters.h"
 #import "QLHybridTextItem.h"
 
+typedef void (^async_emoji_text_displayed_block)(QLHybridTextItem *textItem);
+
 @interface QLAsyncDisplayTextParamters : QLAsyncDisplayObjectParamters
 
 @property (nonatomic, strong) NSString *displayText;
@@ -26,6 +28,10 @@
 
 @property (nonatomic, assign) id<RTLabelDelegate> delegate;
 @property (nonatomic, assign) id<RTLabelSizeDelegate> sizeDelegate;
+
+@property (nonatomic, copy) async_emoji_text_displayed_block emojiTextBlock;
+
+@property (atomic, strong) QLHybridTextItem *textItem;
 
 - (instancetype)initWithIsEmojiText:(BOOL)isEmojiText;
 
