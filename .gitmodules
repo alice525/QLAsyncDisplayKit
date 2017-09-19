@@ -1,0 +1,3 @@
+[submodule "QLAsyncDisplayKit/3rdKit/QNBHybridText"]
+	path = QLAsyncDisplayKit/3rdKit/QNBHybridText
+	url = https://github.com/alice525/QNBHybridText.git
