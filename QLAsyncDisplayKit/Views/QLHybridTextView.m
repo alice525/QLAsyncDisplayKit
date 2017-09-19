@@ -212,18 +212,29 @@
 
 + (CGSize)textSizeWithText:(NSString *)text constraintSize:(CGSize)size font:(UIFont*)font maxLineCount:(NSInteger)lineCount lineSpacing:(CGFloat)lineSpacing;
 {
-    QLHybridTextView* label = [[QLHybridTextView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
-    label.font = font;
-    label.textHorizonalAlignment = NSTextAlignmentLeft;
-    label.prefferedMaxLayoutWidth = size.width;
-    label.numberOfLines = lineCount;
-    if (lineSpacing > 0) {
-        label.lineSpacing = lineSpacing;
-    }
-    label.text = text;
+//    QLHybridTextView* label = [[QLHybridTextView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
+//    label.font = font;
+//    label.textHorizonalAlignment = NSTextAlignmentLeft;
+//    label.prefferedMaxLayoutWidth = size.width;
+//    label.numberOfLines = lineCount;
+//    if (lineSpacing > 0) {
+//        label.lineSpacing = lineSpacing;
+//    }
+//    label.text = text;
+//    
+//    [label layoutSubviews];
+//    CGSize resSize = label.optimumSize;
     
-    [label layoutSubviews];
-    CGSize resSize = label.optimumSize;
+    QLHybridTextItem *item = [[QLHybridTextItem alloc] init];
+    
+    item.text = text;
+    item.font = font;
+    item.numberOfLines = lineCount;
+    item.lineSpacing = lineSpacing;
+    item.prefferedMaxLayoutWidth = size.width;
+    
+    [item translateNormalTextToRichText];
+    CGSize resSize = [item optimumSize:size];
     
     return resSize;
 }
@@ -267,6 +278,19 @@
     }
     
     return optimumSize;
+}
+
++ (void)async_textSizeWithText:(NSString *)text constraintSize:(CGSize)size font:(UIFont *)font maxLineCount:(NSInteger)lineCount lineSpacing:(CGFloat)lineSpacing completeBlock:(async_text_size_caculate_complete_block)completeBlock {
+    
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        
+        CGSize textSize = [QLHybridTextView textSizeWithText:text constraintSize:size font:font maxLineCount:lineCount lineSpacing:lineSpacing];
+        
+        if (completeBlock) {
+            completeBlock(textSize);
+        }
+    });
 }
 
 @end

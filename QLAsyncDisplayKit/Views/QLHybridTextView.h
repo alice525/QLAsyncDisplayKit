@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "QLHybridTextItem.h"
 
+typedef void(^async_text_size_caculate_complete_block)(CGSize textSize);
+
 @interface QLHybridTextView : UIView {
     CGSize _optimumSize;
 }
@@ -56,5 +58,7 @@
  */
 + (CGSize)textSizeWithExceedLineCount:(NSUInteger)eCount targetLines:(NSUInteger)tCount text:(NSString *)text constrainedToSize:(CGSize)size  isExceed:(BOOL *)flag font:(UIFont *)font;
 
+
++ (void)async_textSizeWithText:(NSString *)text constraintSize:(CGSize)size font:(UIFont *)font maxLineCount:(NSInteger)lineCount lineSpacing:(CGFloat)lineSpacing completeBlock:(async_text_size_caculate_complete_block)completeBlock;
 
 @end

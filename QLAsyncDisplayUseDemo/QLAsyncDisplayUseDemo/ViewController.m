@@ -17,6 +17,8 @@
 @property (nonatomic, strong) QLAsyncDisplayLayer *displayImageLayer;
 @property (nonatomic, strong) QLAsyncDisplayTextParamters *textParameter;
 
+@property (nonatomic, assign) CGSize textSize;
+
 @end
 
 @implementation ViewController
@@ -31,16 +33,12 @@
     self.textView.delegate = self;
 
     [self.view addSubview:self.textView];
-
-    //    _displayImageLayer = [QLAsyncDisplayLayer layer];
-    //    _displayImageLayer.backgroundColor = [UIColor redColor].CGColor;
-    //
-    //    _textParameter = [[QLAsyncDisplayTextParamters alloc] initWithIsEmojiText:YES];
-    //    [_displayImageLayer addSubDisplayObjectParameter:_textParameter];
-    //
-    //    [self.view.layer addSublayer:_displayImageLayer];
     
-    //[self initializeDisplayLayer];
+    __weak typeof(self) weakSelf = self;
+    [QLHybridTextView async_textSizeWithText:self.textView.text constraintSize:CGSizeMake(300, 1000) font:[UIFont systemFontOfSize:15] maxLineCount:0 lineSpacing:0 completeBlock:^(CGSize textSize) {
+        weakSelf.textSize = textSize;
+    }];
+
 }
 
 
@@ -52,12 +50,12 @@
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     
-    self.textView.frame = CGRectMake(100, 100, 300, 50);
-//    _displayImageLayer.frame = CGRectMake(100, 200, 300, 20);
-//    
-//    _textParameter.frameInSuperLayer = CGRectMake(0, 0, _displayImageLayer.frame.size.width, _displayImageLayer.frame.size.height);
-//    
-//    [_displayImageLayer setNeedsDisplay];
+    if (CGSizeEqualToSize(self.textSize, CGSizeZero)) {
+        self.textSize = [QLHybridTextView textSizeWithText:self.textView.text constraintSize:CGSizeMake(300, 1000) font:[UIFont systemFontOfSize:15] maxLineCount:0 lineSpacing:0];
+    }
+    
+    self.textView.frame = CGRectMake(20, 50, self.textSize.width, self.textSize.height);
+
 }
 
 - (void)initializeDisplayLayer {
@@ -71,10 +69,6 @@
     _textParameter.opaque = NO;
     
     _displayImageLayer.dataObject = _textParameter.displayText;
-    
-//    _textParameter.textItem = [[QLHybridTextItem alloc] initWithString:_textParameter.displayText];
-//    _textParameter.textItem.font = [UIFont systemFontOfSize:15];
-//    _textParameter.textItem.textColor = [UIColor blackColor];
 }
 
 - (void)rtLabel:(id)rtLabel didSelectLinkWithURL:(NSString*)url {
