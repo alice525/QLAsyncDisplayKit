@@ -99,4 +99,14 @@
     return _textParameter;
 }
 
+- (void)setComponentsAndPlainText:(RTLabelComponentsStructure*)componnetsDS {
+    self.textItem.componentsAndPlainText = componnetsDS;
+
+    [self setNeedsDisplay];
+}
+
+- (RTLabelComponentsStructure*)componentsAndPlainText {
+    return self.textItem.componentsAndPlainText;
+}
+
 @end

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "QLAsyncHybridTextView.h"
 #import "QLAsyncDisplayLayer.h"
+#import "QLSyncHybridTextView.h"
 
 @interface ViewController () <RTLabelDelegate>
 
@@ -18,6 +19,8 @@
 @property (nonatomic, strong) QLAsyncDisplayTextParamters *textParameter;
 
 @property (nonatomic, assign) CGSize textSize;
+
+@property (nonatomic, strong) QLSyncHybridTextView *synTextView;
 
 @end
 
@@ -38,6 +41,12 @@
     [QLHybridTextView async_textSizeWithText:self.textView.text constraintSize:CGSizeMake(300, 1000) font:[UIFont systemFontOfSize:15] maxLineCount:0 lineSpacing:0 completeBlock:^(CGSize textSize) {
         weakSelf.textSize = textSize;
     }];
+    
+    self.synTextView = [[QLSyncHybridTextView alloc] initWithFrame:CGRectZero];
+    self.synTextView.text = @"测试下富文本[微笑]或者emoji😭链接呢http://url.cn/2D8F2e";
+    self.synTextView.delegate = self;
+    
+    [self.view addSubview:self.synTextView];
 
 }
 
@@ -55,6 +64,10 @@
     }
     
     self.textView.frame = CGRectMake(20, 50, self.textSize.width, self.textSize.height);
+    
+    CGSize synSize = [QLHybridTextView textSizeWithText:self.synTextView.text constraintSize:CGSizeMake(300, 1000) font:[UIFont systemFontOfSize:15] maxLineCount:0 lineSpacing:0];
+    
+    self.synTextView.frame = CGRectMake(20, 100, synSize.width, synSize.height);
 
 }
 

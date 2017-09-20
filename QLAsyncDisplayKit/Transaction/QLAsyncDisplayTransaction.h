@@ -25,16 +25,6 @@ typedef void(^async_transaction_complete_block_t)(UIImage *image);
 
 @interface QLAsyncDisplayTransaction : NSObject
 
-//- (void)displayWithSourceParameters:(NSArray<QLAsyncDisplayObjectParamters *> *)parameterList
-//                              layer:(QLAsyncDisplayLayer *)layer
-//                         dataObject:(NSObject*)object;
-//
-//- (void)displaySubContentsWithParameters:(QLAsyncDisplayObjectParamters *)parameters
-//                                   layer:(QLAsyncDisplayLayer *)layer
-//                              dataObject:(NSObject*)object
-//                         backgroundImage:(UIImage *)image
-//                                  bgSize:(CGSize)bgSize;
-
 + (QLAsyncDisplayTransaction *)transactionWithDisplayBlock:(async_transaction_display_block_t)displayBlock completeBlock:(async_transaction_complete_block_t)completeBlock;
 
 - (void)commit;

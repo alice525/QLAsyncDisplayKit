@@ -38,8 +38,6 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    
-    //[_textItem translateNormalTextToRichText];
 }
 
 - (QLHybridTextItem *)textItem {
@@ -112,16 +110,6 @@
     return _font;
 }
 
-//- (void)setComponentsAndPlainText:(RTLabelComponentsStructure*)componnetsDS {
-//    self.textItem.componentsAndPlainText = componnetsDS;
-//    
-//    [self setNeedsDisplay];
-//}
-//
-//- (RTLabelComponentsStructure*)componentsAndPlainText {
-//    return self.textItem.componentsAndPlainText ;
-//}
-
 - (void)setDelegate:(id<RTLabelDelegate>)delegate {
     _delegate = delegate;
 }
@@ -137,16 +125,6 @@
 - (id<RTLabelSizeDelegate>)sizeDelegate {
     return _sizeDelegate;
 }
-
-
-#pragma mark -
-#pragma excute render
-//- (void)drawRect:(CGRect)rect
-//{
-//    [self.textItem renderInSize:CGSizeMake(CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
-//}
-
-
 
 #pragma mark -
 #pragma mark Touch Handling
@@ -212,19 +190,6 @@
 
 + (CGSize)textSizeWithText:(NSString *)text constraintSize:(CGSize)size font:(UIFont*)font maxLineCount:(NSInteger)lineCount lineSpacing:(CGFloat)lineSpacing;
 {
-//    QLHybridTextView* label = [[QLHybridTextView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
-//    label.font = font;
-//    label.textHorizonalAlignment = NSTextAlignmentLeft;
-//    label.prefferedMaxLayoutWidth = size.width;
-//    label.numberOfLines = lineCount;
-//    if (lineSpacing > 0) {
-//        label.lineSpacing = lineSpacing;
-//    }
-//    label.text = text;
-//    
-//    [label layoutSubviews];
-//    CGSize resSize = label.optimumSize;
-    
     QLHybridTextItem *item = [[QLHybridTextItem alloc] init];
     
     item.text = text;

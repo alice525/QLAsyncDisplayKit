@@ -10,4 +10,7 @@
 
 @interface QLSyncHybridTextView : QLHybridTextView
 
+- (void)setComponentsAndPlainText:(RTLabelComponentsStructure*)componnetsDS;
+- (RTLabelComponentsStructure*)componentsAndPlainText;
+
 @end

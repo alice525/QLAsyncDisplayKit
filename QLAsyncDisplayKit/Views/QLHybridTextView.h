@@ -30,9 +30,6 @@ typedef void(^async_text_size_caculate_complete_block)(CGSize textSize);
 @property (nonatomic, assign) id<RTLabelDelegate> delegate;
 @property (nonatomic, assign) id<RTLabelSizeDelegate> sizeDelegate;
 
-- (void)setComponentsAndPlainText:(RTLabelComponentsStructure*)componnetsDS;
-- (RTLabelComponentsStructure*)componentsAndPlainText;
-
 - (CGSize)optimumSize;
 
 - (NSUInteger)lineCount;
